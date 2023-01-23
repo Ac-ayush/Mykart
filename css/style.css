@@ -1,0 +1,165 @@
+/*importing font from google*/
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --main-bg-color: #2874f0
+        /*ese globly color ko define krke multible elements me var functon ki help se use krte he */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--main-bg-color);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    /* border: 2px solid red; */
+}
+
+nav {
+    display: flex;
+    /*logo ko horizontel krne ke luye*/
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    padding: 0px 25px;
+}
+
+nav ul {
+    height: 8vh;
+    display: flex;
+    /*HaC ko horizontel krne ke luye*/
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    /*lists ke aage ke dot/circle hatane ke liye */
+    padding: 0px 12px;
+    /*HaC me space*/
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    /*jese hi koi nav ke items ko hover(touch) krega*/
+    font-weight: bolder;
+    /*to font thoda bold aur black ho jayega*/
+    color: black;
+    /* cursor:pointer;  */
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 25vw;
+    height: 25px;
+    margin: 0px 10px 0px 30px;
+    border-radius: 5px;
+    padding: 0px 12px;
+}
+
+.search button {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 700;
+}
+
+.search button:hover {
+    font-weight: bolder;
+    color: black;
+    border-color: black;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+.login button {
+    padding: 4px;
+    display: flex;
+    background: var(--main-bg-color);
+    border-radius: 10px;
+    border-color: white;
+    color: white;
+    justify-content: center;
+    margin: 0px 7px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.login button:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+
+.container {
+    min-height: calc(100vh - 8vh - 10vh);
+    /*container ko 82vh*/
+}
+
+.slider {
+    /* To center the slider image we have 2 option */
+    margin: 12px auto;
+    /*top se margin 12px*/
+    width: 85vw;
+    /* ya fir ye kr skte he  */
+    /* display: flex;
+    justify-content: center; */
+
+    overflow: hidden;
+}
+
+.cards {
+    max-width: 90vw;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    overflow-y: hidden;
+    /*taki agar koi item card se bahar jayega to scroll kar ske */
+    /* justify-content: center; */
+}
+
+.card-item {
+    width: 170px;
+    height: 262px;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 20px 0px 20px;
+}
+
+.cards h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    height: 10vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
