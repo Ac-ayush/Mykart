@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
 
 :root {
     --main-bg-color: #2874f0
@@ -127,6 +128,16 @@ nav ul li a:hover {
     justify-content: center; */
 
     overflow: hidden;
+}
+
+.slidertxt {
+    font-size: 90px;
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-family: 'Libre Baskerville', serif;
+    -webkit-text-stroke: 2px white;
 }
 
 .cards {
